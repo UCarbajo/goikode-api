@@ -7,15 +7,26 @@ const servicesRoutes = require("./routes/services");
 const app = express();
 const PORT = process.env.PORT || 3000;
 // Configuración de CORS para producción
+const allowedOrigins = [
+  "https://goikode-web.netlify.app",
+  "https://goikode-web.vercel.app",
+  "https://flourishing-kitsune-26cd13.netlify.app",
+];
+
 const corsOptions = {
-  origin:
-    process.env.NODE_ENV === "production"
-      ? [
-          "https://goikode-web.netlify.app",
-          "https://goikode-web.vercel.app",
-          "https://flourishing-kitsune-26cd13.netlify.app",
-        ]
-      : "*",
+  origin: (origin, callback) => {
+    console.log("Origin recibido:", origin);
+    if (
+      process.env.NODE_ENV !== "production" ||
+      !origin ||
+      allowedOrigins.includes(origin)
+    ) {
+      callback(null, true);
+    } else {
+      console.log("Bloqueado por CORS:", origin);
+      callback(new Error("No permitido por CORS"));
+    }
+  },
   optionsSuccessStatus: 200,
 };
 
