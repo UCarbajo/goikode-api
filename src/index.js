@@ -10,7 +10,11 @@ const PORT = process.env.PORT || 3000;
 const corsOptions = {
   origin:
     process.env.NODE_ENV === "production"
-      ? ["https://goikode-web.netlify.app", "https://goikode-web.vercel.app"]
+      ? [
+          "https://goikode-web.netlify.app",
+          "https://goikode-web.vercel.app",
+          "flourishing-kitsune-26cd13.netlify.app",
+        ]
       : "*",
   optionsSuccessStatus: 200,
 };
