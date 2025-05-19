@@ -30,6 +30,11 @@ const corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+app.use((req, res, next) => {
+  console.log("Método:", req.method, "URL:", req.url);
+  next();
+});
+
 // Middlewares
 app.use(cors(corsOptions));
 app.use(morgan(process.env.NODE_ENV === "production" ? "combined" : "dev"));
