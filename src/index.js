@@ -6,11 +6,19 @@ const servicesRoutes = require("./routes/services");
 // Inicializar la aplicación Express
 const app = express();
 const PORT = process.env.PORT || 3000;
+// Configuración de CORS para producción
+const corsOptions = {
+  origin:
+    process.env.NODE_ENV === "production"
+      ? ["https://goikode-web.netlify.app", "https://goikode-web.vercel.app"]
+      : "*",
+  optionsSuccessStatus: 200,
+};
 
 // Middlewares
-app.use(cors()); // Habilitar CORS para todas las rutas
-app.use(morgan("dev")); // Registrar solicitudes HTTP
-app.use(express.json()); // Parsear solicitudes con JSON
+app.use(cors(corsOptions));
+app.use(morgan(process.env.NODE_ENV === "production" ? "combined" : "dev"));
+app.use(express.json());
 
 // Rutas
 app.use("/api/services", servicesRoutes);
@@ -35,4 +43,5 @@ app.use((req, res) => {
 // Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
+  console.log(`Entorno: ${process.env.NODE_ENV || "desarrollo"}`);
 });
