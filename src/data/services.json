@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "Auditoría de Seguridad",
+    "slug": "auditoria-de-seguridad",
+    "description": "Evaluación exhaustiva de la infraestructura y sistemas para identificar vulnerabilidades y riesgos de seguridad.",
+    "longDescription": "Nuestro servicio de auditoría de seguridad proporciona una evaluación completa y detallada de la infraestructura de TI, aplicaciones y políticas de seguridad de su organización. Identificamos vulnerabilidades, evaluamos riesgos y proporcionamos recomendaciones prácticas para mejorar su postura de seguridad. Utilizamos metodologías probadas y herramientas avanzadas para garantizar una evaluación exhaustiva.",
+    "features": [
+      "Análisis de vulnerabilidades",
+      "Evaluación de configuraciones",
+      "Revisión de políticas de seguridad",
+      "Pruebas de penetración",
+      "Informe detallado con recomendaciones"
+    ],
+    "price": "Desde 2.500€",
+    "duration": "2-4 semanas",
+    "icon": "security-audit"
+  },
+  {
+    "id": 2,
+    "name": "Desarrollo Seguro",
+    "slug": "desarrollo-seguro",
+    "description": "Implementación de prácticas de desarrollo seguro en todo el ciclo de vida del software para prevenir vulnerabilidades.",
+    "longDescription": "Nuestro enfoque de desarrollo seguro integra la seguridad en cada fase del ciclo de vida del desarrollo de software (SDLC). Ayudamos a su equipo a implementar prácticas de codificación segura, realizar revisiones de código, y automatizar pruebas de seguridad. El resultado es un producto final más resistente a ataques y con menos vulnerabilidades, reduciendo el costo de corrección de problemas de seguridad en etapas posteriores.",
+    "features": [
+      "Integración de seguridad en el SDLC",
+      "Revisiones de código de seguridad",
+      "Pruebas de seguridad automatizadas",
+      "Capacitación en codificación segura",
+      "Gestión segura de dependencias"
+    ],
+    "price": "Personalizado según proyecto",
+    "duration": "Continuo",
+    "icon": "secure-development"
+  },
+  {
+    "id": 3,
+    "name": "Gestión de Incidentes",
+    "slug": "gestion-de-incidentes",
+    "description": "Respuesta rápida y eficaz ante incidentes de seguridad para minimizar el impacto y restaurar operaciones normales.",
+    "longDescription": "Nuestro servicio de gestión de incidentes proporciona un enfoque estructurado para responder a brechas de seguridad y otros eventos disruptivos. Contamos con un equipo experimentado disponible 24/7 para ayudarle a contener, erradicar y recuperarse de incidentes de seguridad. Además, realizamos análisis post-incidente para identificar la causa raíz y prevenir futuros incidentes similares.",
+    "features": [
+      "Respuesta 24/7 a incidentes",
+      "Contención y erradicación de amenazas",
+      "Análisis forense digital",
+      "Recuperación y restauración de sistemas",
+      "Análisis post-incidente y lecciones aprendidas"
+    ],
+    "price": "Desde 1.800€/mes",
+    "duration": "Servicio continuo",
+    "icon": "incident-response"
+  },
+  {
+    "id": 4,
+    "name": "Protección contra Ransomware",
+    "slug": "proteccion-contra-ransomware",
+    "description": "Soluciones preventivas y reactivas para proteger su organización contra ataques de ransomware.",
+    "longDescription": "Nuestro servicio de protección contra ransomware combina medidas preventivas, detección temprana y planes de respuesta para defenderse contra esta creciente amenaza. Implementamos una estrategia de defensa en profundidad que incluye copias de seguridad seguras, sistemas de detección avanzados, y formación de usuarios. En caso de un ataque, nuestro equipo está preparado para responder rápidamente para minimizar el impacto.",
+    "features": [
+      "Evaluación de vulnerabilidades específicas de ransomware",
+      "Implementación de sistemas de detección temprana",
+      "Estrategia de copias de seguridad inmutables",
+      "Plan de respuesta a incidentes de ransomware",
+      "Formación de concienciación para empleados"
+    ],
+    "price": "Desde 3.200€",
+    "duration": "Implementación: 2-3 semanas + Monitoreo continuo",
+    "icon": "ransomware-protection"
+  },
+  {
+    "id": 5,
+    "name": "Formación en Ciberseguridad",
+    "slug": "formacion-en-ciberseguridad",
+    "description": "Programas de capacitación personalizados para aumentar la conciencia de seguridad en todos los niveles de su organización.",
+    "longDescription": "Nuestros programas de formación en ciberseguridad están diseñados para convertir a sus empleados en la primera línea de defensa contra las ciberamenazas. Ofrecemos sesiones interactivas, simulaciones de phishing, y materiales educativos adaptados a diferentes roles dentro de su organización. Nuestro enfoque práctico asegura que los participantes no solo adquieran conocimientos teóricos, sino también habilidades aplicables en situaciones reales.",
+    "features": [
+      "Formación adaptada a diferentes niveles técnicos",
+      "Simulaciones de phishing y ataques sociales",
+      "Workshops prácticos de seguridad",
+      "Materiales educativos actualizados regularmente",
+      "Evaluaciones para medir la efectividad"
+    ],
+    "price": "Desde 950€ por sesión",
+    "duration": "Sesiones de 4-8 horas",
+    "icon": "security-training"
+  },
+  {
+    "id": 6,
+    "name": "Seguridad en la Nube",
+    "slug": "seguridad-en-la-nube",
+    "description": "Protección de entornos cloud para garantizar la seguridad de sus datos y aplicaciones en plataformas como AWS, Azure y Google Cloud.",
+    "longDescription": "Nuestro servicio de seguridad en la nube ayuda a proteger sus recursos en entornos cloud públicos, privados e híbridos. Implementamos controles de seguridad adaptados a las principales plataformas (AWS, Azure, Google Cloud), asegurando que su migración a la nube o su infraestructura existente cumpla con las mejores prácticas de seguridad. Nuestro enfoque incluye la automatización de la seguridad y la implementación de políticas de acceso siguiendo el principio de mínimo privileg io.",
+    "features": [
+      "Evaluación de seguridad de entornos cloud",
+      "Implementación de arquitecturas seguras",
+      "Configuración de políticas de acceso y IAM",
+      "Monitorización continua de seguridad",
+      "Automatización de respuestas a amenazas"
+    ],
+    "price": "Desde 2.800€",
+    "duration": "Evaluación inicial: 1-2 semanas + Implementación según alcance",
+    "icon": "cloud-security"
+  }
+]
