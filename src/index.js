@@ -13,7 +13,7 @@ const corsOptions = {
       ? [
           "https://goikode-web.netlify.app",
           "https://goikode-web.vercel.app",
-          "flourishing-kitsune-26cd13.netlify.app",
+          "https://flourishing-kitsune-26cd13.netlify.app",
         ]
       : "*",
   optionsSuccessStatus: 200,
